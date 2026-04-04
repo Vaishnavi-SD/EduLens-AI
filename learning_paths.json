@@ -1,0 +1,175 @@
+[
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "11.3%",
+    "recommended_modules": [
+      7,
+      8,
+      9
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Data Science with Python",
+    "student_id": 7,
+    "student_name": "Student_7"
+  },
+  {
+    "path_type": "SUPPORTIVE",
+    "urgency": "Monitor closely",
+    "dropout_probability": "25.3%",
+    "recommended_modules": [
+      6,
+      7,
+      8
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 16,
+    "student_name": "Student_16"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "13.0%",
+    "recommended_modules": [
+      6,
+      7,
+      8
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 18,
+    "student_name": "Student_18"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "33.8%",
+    "recommended_modules": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 23,
+    "student_name": "Student_23"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "10.9%",
+    "recommended_modules": [
+      4,
+      5,
+      6
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 25,
+    "student_name": "Student_25"
+  },
+  {
+    "path_type": "SUPPORTIVE",
+    "urgency": "Monitor closely",
+    "dropout_probability": "16.2%",
+    "recommended_modules": [
+      1,
+      2,
+      3
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Mathematics Fundamentals",
+    "student_id": 26,
+    "student_name": "Student_26"
+  },
+  {
+    "path_type": "SUPPORTIVE",
+    "urgency": "Monitor closely",
+    "dropout_probability": "20.3%",
+    "recommended_modules": [
+      5,
+      6,
+      7
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "English Communication",
+    "student_id": 27,
+    "student_name": "Student_27"
+  },
+  {
+    "path_type": "SUPPORTIVE",
+    "urgency": "Monitor closely",
+    "dropout_probability": "16.1%",
+    "recommended_modules": [
+      1,
+      2,
+      3
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Mathematics Fundamentals",
+    "student_id": 28,
+    "student_name": "Student_28"
+  },
+  {
+    "path_type": "SUPPORTIVE",
+    "urgency": "Monitor closely",
+    "dropout_probability": "18.8%",
+    "recommended_modules": [
+      7,
+      8,
+      9
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 31,
+    "student_name": "Student_31"
+  }
+]

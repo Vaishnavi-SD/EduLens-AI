@@ -14,10 +14,9 @@ st.set_page_config(
     layout="wide"
 )
 
-DB_PATH = r'C:\Users\vaish\OneDrive\Documents\AiProject\edulens.db'
-MODEL_PATH = r'C:\Users\vaish\OneDrive\Documents\AiProject\dropout_model.pkl'
-ENCODER_PATH = r'C:\Users\vaish\OneDrive\Documents\AiProject\label_encoder.pkl'
-
+DB_PATH = 'edulens.db'
+MODEL_PATH = 'dropout_model.pkl'
+ENCODER_PATH = 'label_encoder.pkl'
 @st.cache_resource
 def load_model():
     with open(MODEL_PATH, 'rb') as f:
@@ -273,7 +272,7 @@ elif page == "Learning Paths":
     st.markdown("---")
 
     try:
-        with open(r'C:\Users\vaish\OneDrive\Documents\AiProject\learning_paths.json') as f:
+        with open('learning_paths.json') as f:
             paths = json.load(f)
 
         st.metric("Total Paths Generated", len(paths))

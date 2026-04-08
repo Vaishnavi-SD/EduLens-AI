@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🌤️ Weather Dashboard</h1>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search city..."
+                    autocomplete="off"
+                >
+                <button id="searchBtn" class="search-btn">Search</button>
+                <button id="locationBtn" class="location-btn" title="Use current location">📍</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div id="loadingSpinner" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Loading weather data...</p>
+            </div>
+
+            <div id="errorMessage" class="error hidden"></div>
+
+            <div id="weatherContainer" class="weather-container hidden">
+                <section class="current-weather">
+                    <div class="location-info">
+                        <h2 id="cityName"></h2>
+                        <p id="dateTime"></p>
+                    </div>
+                    <div class="weather-main">
+                        <img id="weatherIcon" src="" alt="Weather icon" class="weather-icon">
+                        <div class="temperature-section">
+                            <span id="temperature" class="temperature"></span>
+                            <span class="unit">°C</span>
+                        </div>
+                    </div>
+                    <p id="weatherDescription" class="weather-description"></p>
+                </section>
+
+                <section class="weather-details">
+                    <div class="detail-card">
+                        <h3>Feels Like</h3>
+                        <p id="feelsLike"></p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Humidity</h3>
+                        <p id="humidity"></p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Wind Speed</h3>
+                        <p id="windSpeed"></p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Pressure</h3>
+                        <p id="pressure"></p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Visibility</h3>
+                        <p id="visibility"></p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>UV Index</h3>
+                        <p id="uvIndex"></p>
+                    </div>
+                </section>
+
+                <section class="forecast-section">
+                    <h3>5-Day Forecast</h3>
+                    <div id="forecastContainer" class="forecast-container"></div>
+                </section>
+
+                <section class="hourly-section">
+                    <h3>Hourly Forecast</h3>
+                    <div id="hourlyContainer" class="hourly-container"></div>
+                </section>
+            </div>
+
+            <section id="recentSearches" class="recent-searches hidden">
+                <h3>Recent Searches</h3>
+                <div id="searchHistory" class="search-history"></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Data provided by OpenWeatherMap API | Dashboard created with ❤️</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

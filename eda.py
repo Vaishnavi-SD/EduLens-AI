@@ -172,8 +172,3 @@ plt.close()
 print("Chart 5 saved: correlation heatmap")
 
 conn.close()
-print("\n" + "=" * 50)
-print("Week 2 EDA COMPLETE!")
-print(f"All charts saved in: {output_dir}")
-print("Next step: Week 3 — Train the dropout prediction model")
-print("=" * 50)

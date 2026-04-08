@@ -22,7 +22,7 @@ with open(encoder_path, 'rb') as f:
 print("\nModel and database loaded!")
 
 # ================================================
-# STEP 1: Load student data
+#  Load student data
 # ================================================
 query = '''
 SELECT 
@@ -39,7 +39,7 @@ students_df = pd.read_sql(query, conn)
 print(f"\nLoaded {len(students_df)} active students for analysis")
 
 # ================================================
-# STEP 2: Build features for prediction
+#  Build features for prediction
 # ================================================
 risk_df = pd.read_sql('SELECT * FROM risk_scores', conn)
 assess_df = pd.read_sql('SELECT * FROM assessments', conn)
@@ -84,7 +84,7 @@ features_df['dropout_pred'] = model.predict(X)
 features_df['dropout_prob'] = model.predict_proba(X)[:, 1]
 
 # ================================================
-# STEP 3: Path generation engine
+# Path generation engine
 # ================================================
 def generate_learning_path(student):
     prob = student['dropout_prob']
@@ -155,7 +155,7 @@ def generate_learning_path(student):
     }
 
 # ================================================
-# STEP 4: Generate paths for at-risk students
+#  Generate paths for at-risk students
 # ================================================
 at_risk = features_df[features_df['dropout_prob'] >= 0.1].copy()
 print(f"\nStudents needing intervention: {len(at_risk)}")
@@ -183,7 +183,7 @@ for _, student in at_risk.iterrows():
 conn.commit()
 
 # ================================================
-# STEP 5: Print sample paths
+#  Print sample paths
 # ================================================
 print("\n" + "=" * 50)
 print("SAMPLE GENERATED LEARNING PATHS")
@@ -202,7 +202,7 @@ for path in paths_generated[:5]:
     print("-" * 40)
 
 # ================================================
-# STEP 6: Summary stats
+#  Summary stats
 # ================================================
 path_type_counts = {}
 for p in paths_generated:

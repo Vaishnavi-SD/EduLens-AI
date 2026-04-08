@@ -1,8 +1,8 @@
 [
   {
-    "path_type": "STANDARD",
-    "urgency": "On track",
-    "dropout_probability": "11.3%",
+    "path_type": "SUPPORTIVE",
+    "urgency": "Monitor closely",
+    "dropout_probability": "28.0%",
     "recommended_modules": [
       7,
       8,
@@ -14,14 +14,14 @@
       "Review diagram-based study materials"
     ],
     "weekly_goal": "Complete 3 modules in 7 days",
-    "course": "Data Science with Python",
-    "student_id": 7,
-    "student_name": "Student_7"
+    "course": "Mathematics Fundamentals",
+    "student_id": 11,
+    "student_name": "Student_11"
   },
   {
     "path_type": "SUPPORTIVE",
     "urgency": "Monitor closely",
-    "dropout_probability": "25.3%",
+    "dropout_probability": "19.7%",
     "recommended_modules": [
       6,
       7,
@@ -38,10 +38,12 @@
     "student_name": "Student_16"
   },
   {
-    "path_type": "STANDARD",
-    "urgency": "On track",
-    "dropout_probability": "13.0%",
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "50.1%",
     "recommended_modules": [
+      4,
+      5,
       6,
       7,
       8
@@ -51,15 +53,34 @@
       "Join study discussion groups",
       "Use text-to-speech for reading material"
     ],
-    "weekly_goal": "Complete 3 modules in 7 days",
+    "weekly_goal": "Complete 5 modules in 7 days",
     "course": "Physics for Engineers",
     "student_id": 18,
     "student_name": "Student_18"
   },
   {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "10.1%",
+    "recommended_modules": [
+      2,
+      3,
+      4
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Data Science with Python",
+    "student_id": 21,
+    "student_name": "Student_21"
+  },
+  {
     "path_type": "REMEDIAL",
     "urgency": "Extra support needed",
-    "dropout_probability": "33.8%",
+    "dropout_probability": "45.3%",
     "recommended_modules": [
       3,
       4,
@@ -78,10 +99,12 @@
     "student_name": "Student_23"
   },
   {
-    "path_type": "STANDARD",
-    "urgency": "On track",
-    "dropout_probability": "10.9%",
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "47.4%",
     "recommended_modules": [
+      2,
+      3,
       4,
       5,
       6
@@ -91,35 +114,39 @@
       "Join study discussion groups",
       "Use text-to-speech for reading material"
     ],
-    "weekly_goal": "Complete 3 modules in 7 days",
+    "weekly_goal": "Complete 5 modules in 7 days",
     "course": "Physics for Engineers",
     "student_id": 25,
     "student_name": "Student_25"
   },
   {
-    "path_type": "SUPPORTIVE",
-    "urgency": "Monitor closely",
-    "dropout_probability": "16.2%",
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "64.4%",
     "recommended_modules": [
       1,
       2,
-      3
+      3,
+      4,
+      5
     ],
     "learning_tips": [
       "Work through hands-on practice problems",
       "Build mini-projects for each module",
       "Use interactive simulations"
     ],
-    "weekly_goal": "Complete 3 modules in 7 days",
+    "weekly_goal": "Complete 5 modules in 7 days",
     "course": "Mathematics Fundamentals",
     "student_id": 26,
     "student_name": "Student_26"
   },
   {
-    "path_type": "SUPPORTIVE",
-    "urgency": "Monitor closely",
-    "dropout_probability": "20.3%",
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "45.7%",
     "recommended_modules": [
+      3,
+      4,
       5,
       6,
       7
@@ -129,7 +156,7 @@
       "Build mini-projects for each module",
       "Use interactive simulations"
     ],
-    "weekly_goal": "Complete 3 modules in 7 days",
+    "weekly_goal": "Complete 5 modules in 7 days",
     "course": "English Communication",
     "student_id": 27,
     "student_name": "Student_27"
@@ -137,27 +164,28 @@
   {
     "path_type": "SUPPORTIVE",
     "urgency": "Monitor closely",
-    "dropout_probability": "16.1%",
+    "dropout_probability": "20.7%",
     "recommended_modules": [
-      1,
-      2,
-      3
+      11,
+      12
     ],
     "learning_tips": [
-      "Work through hands-on practice problems",
-      "Build mini-projects for each module",
-      "Use interactive simulations"
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
     ],
-    "weekly_goal": "Complete 3 modules in 7 days",
-    "course": "Mathematics Fundamentals",
-    "student_id": 28,
-    "student_name": "Student_28"
+    "weekly_goal": "Complete 2 modules in 7 days",
+    "course": "Data Science with Python",
+    "student_id": 29,
+    "student_name": "Student_29"
   },
   {
-    "path_type": "SUPPORTIVE",
-    "urgency": "Monitor closely",
-    "dropout_probability": "18.8%",
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "46.9%",
     "recommended_modules": [
+      5,
+      6,
       7,
       8,
       9
@@ -167,7 +195,7 @@
       "Join study discussion groups",
       "Use text-to-speech for reading material"
     ],
-    "weekly_goal": "Complete 3 modules in 7 days",
+    "weekly_goal": "Complete 5 modules in 7 days",
     "course": "Physics for Engineers",
     "student_id": 31,
     "student_name": "Student_31"

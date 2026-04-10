@@ -1,8 +1,174 @@
 [
   {
-    "path_type": "SUPPORTIVE",
-    "urgency": "Monitor closely",
-    "dropout_probability": "28.0%",
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "39.0%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "English Communication",
+    "student_id": 3,
+    "student_name": "Student_3"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "12.5%",
+    "recommended_modules": [
+      7,
+      8,
+      9
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Data Science with Python",
+    "student_id": 7,
+    "student_name": "Student_7"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "32.9%",
+    "recommended_modules": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Data Science with Python",
+    "student_id": 7,
+    "student_name": "Student_7"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "55.6%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 9,
+    "student_name": "Student_9"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "73.7%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 9,
+    "student_name": "Student_9"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "63.4%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 9,
+    "student_name": "Student_9"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "56.8%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 9,
+    "student_name": "Student_9"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "47.2%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 9,
+    "student_name": "Student_9"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "12.9%",
     "recommended_modules": [
       7,
       8,
@@ -21,8 +187,269 @@
   {
     "path_type": "SUPPORTIVE",
     "urgency": "Monitor closely",
-    "dropout_probability": "19.7%",
+    "dropout_probability": "29.4%",
     "recommended_modules": [
+      7,
+      8,
+      9
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Mathematics Fundamentals",
+    "student_id": 11,
+    "student_name": "Student_11"
+  },
+  {
+    "path_type": "SUPPORTIVE",
+    "urgency": "Monitor closely",
+    "dropout_probability": "29.4%",
+    "recommended_modules": [
+      7,
+      8,
+      9
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Mathematics Fundamentals",
+    "student_id": 11,
+    "student_name": "Student_11"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "10.4%",
+    "recommended_modules": [
+      7,
+      8,
+      9
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Mathematics Fundamentals",
+    "student_id": 11,
+    "student_name": "Student_11"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "12.9%",
+    "recommended_modules": [
+      7,
+      8,
+      9
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Mathematics Fundamentals",
+    "student_id": 11,
+    "student_name": "Student_11"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "45.9%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "English Communication",
+    "student_id": 12,
+    "student_name": "Student_12"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "11.7%",
+    "recommended_modules": [
+      1,
+      2,
+      3
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "English Communication",
+    "student_id": 12,
+    "student_name": "Student_12"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "49.4%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "English Communication",
+    "student_id": 12,
+    "student_name": "Student_12"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "11.2%",
+    "recommended_modules": [
+      1,
+      2,
+      3
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "English Communication",
+    "student_id": 12,
+    "student_name": "Student_12"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "11.7%",
+    "recommended_modules": [
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 14,
+    "student_name": "Student_14"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "63.5%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 14,
+    "student_name": "Student_14"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "49.9%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 14,
+    "student_name": "Student_14"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "63.0%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 14,
+    "student_name": "Student_14"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "63.4%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 14,
+    "student_name": "Student_14"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "62.0%",
+    "recommended_modules": [
+      4,
+      5,
       6,
       7,
       8
@@ -32,7 +459,7 @@
       "Take structured notes for each topic",
       "Use flashcards for key concepts"
     ],
-    "weekly_goal": "Complete 3 modules in 7 days",
+    "weekly_goal": "Complete 5 modules in 7 days",
     "course": "Machine Learning Basics",
     "student_id": 16,
     "student_name": "Student_16"
@@ -40,7 +467,70 @@
   {
     "path_type": "CRITICAL INTERVENTION",
     "urgency": "Immediate action required",
-    "dropout_probability": "50.1%",
+    "dropout_probability": "76.8%",
+    "recommended_modules": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 16,
+    "student_name": "Student_16"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "31.5%",
+    "recommended_modules": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 16,
+    "student_name": "Student_16"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "44.0%",
+    "recommended_modules": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 16,
+    "student_name": "Student_16"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "40.6%",
     "recommended_modules": [
       4,
       5,
@@ -59,9 +549,213 @@
     "student_name": "Student_18"
   },
   {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "59.4%",
+    "recommended_modules": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 18,
+    "student_name": "Student_18"
+  },
+  {
+    "path_type": "SUPPORTIVE",
+    "urgency": "Monitor closely",
+    "dropout_probability": "15.3%",
+    "recommended_modules": [
+      6,
+      7,
+      8
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 18,
+    "student_name": "Student_18"
+  },
+  {
     "path_type": "STANDARD",
     "urgency": "On track",
-    "dropout_probability": "10.1%",
+    "dropout_probability": "12.7%",
+    "recommended_modules": [
+      6,
+      7,
+      8
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 18,
+    "student_name": "Student_18"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "37.8%",
+    "recommended_modules": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 18,
+    "student_name": "Student_18"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "67.5%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 19,
+    "student_name": "Student_19"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "73.3%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 19,
+    "student_name": "Student_19"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "73.3%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 19,
+    "student_name": "Student_19"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "79.9%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 19,
+    "student_name": "Student_19"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "73.9%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 19,
+    "student_name": "Student_19"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "11.4%",
+    "recommended_modules": [
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 20,
+    "student_name": "Student_20"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "10.6%",
     "recommended_modules": [
       2,
       3,
@@ -78,9 +772,87 @@
     "student_name": "Student_21"
   },
   {
-    "path_type": "REMEDIAL",
-    "urgency": "Extra support needed",
-    "dropout_probability": "45.3%",
+    "path_type": "SUPPORTIVE",
+    "urgency": "Monitor closely",
+    "dropout_probability": "29.0%",
+    "recommended_modules": [
+      2,
+      3,
+      4
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Data Science with Python",
+    "student_id": 21,
+    "student_name": "Student_21"
+  },
+  {
+    "path_type": "SUPPORTIVE",
+    "urgency": "Monitor closely",
+    "dropout_probability": "28.2%",
+    "recommended_modules": [
+      2,
+      3,
+      4
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Data Science with Python",
+    "student_id": 21,
+    "student_name": "Student_21"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "69.5%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Data Science with Python",
+    "student_id": 21,
+    "student_name": "Student_21"
+  },
+  {
+    "path_type": "SUPPORTIVE",
+    "urgency": "Monitor closely",
+    "dropout_probability": "28.2%",
+    "recommended_modules": [
+      2,
+      3,
+      4
+    ],
+    "learning_tips": [
+      "Watch video summaries for each module",
+      "Use mind maps to connect concepts",
+      "Review diagram-based study materials"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Data Science with Python",
+    "student_id": 21,
+    "student_name": "Student_21"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "82.3%",
     "recommended_modules": [
       3,
       4,
@@ -99,9 +871,93 @@
     "student_name": "Student_23"
   },
   {
-    "path_type": "REMEDIAL",
-    "urgency": "Extra support needed",
-    "dropout_probability": "47.4%",
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "72.9%",
+    "recommended_modules": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 23,
+    "student_name": "Student_23"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "85.4%",
+    "recommended_modules": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 23,
+    "student_name": "Student_23"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "72.9%",
+    "recommended_modules": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 23,
+    "student_name": "Student_23"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "88.4%",
+    "recommended_modules": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 23,
+    "student_name": "Student_23"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "72.4%",
     "recommended_modules": [
       2,
       3,
@@ -122,7 +978,131 @@
   {
     "path_type": "CRITICAL INTERVENTION",
     "urgency": "Immediate action required",
-    "dropout_probability": "64.4%",
+    "dropout_probability": "72.4%",
+    "recommended_modules": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 25,
+    "student_name": "Student_25"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "61.3%",
+    "recommended_modules": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 25,
+    "student_name": "Student_25"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "10.5%",
+    "recommended_modules": [
+      4,
+      5,
+      6
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 25,
+    "student_name": "Student_25"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "86.4%",
+    "recommended_modules": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 25,
+    "student_name": "Student_25"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "70.6%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Mathematics Fundamentals",
+    "student_id": 26,
+    "student_name": "Student_26"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "61.4%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Mathematics Fundamentals",
+    "student_id": 26,
+    "student_name": "Student_26"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "69.9%",
     "recommended_modules": [
       1,
       2,
@@ -143,7 +1123,49 @@
   {
     "path_type": "REMEDIAL",
     "urgency": "Extra support needed",
-    "dropout_probability": "45.7%",
+    "dropout_probability": "44.2%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Mathematics Fundamentals",
+    "student_id": 26,
+    "student_name": "Student_26"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "66.5%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Mathematics Fundamentals",
+    "student_id": 26,
+    "student_name": "Student_26"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "49.1%",
     "recommended_modules": [
       3,
       4,
@@ -162,10 +1184,136 @@
     "student_name": "Student_27"
   },
   {
-    "path_type": "SUPPORTIVE",
-    "urgency": "Monitor closely",
-    "dropout_probability": "20.7%",
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "37.7%",
     "recommended_modules": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "English Communication",
+    "student_id": 27,
+    "student_name": "Student_27"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "53.6%",
+    "recommended_modules": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "English Communication",
+    "student_id": 27,
+    "student_name": "Student_27"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "67.1%",
+    "recommended_modules": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "English Communication",
+    "student_id": 27,
+    "student_name": "Student_27"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "34.3%",
+    "recommended_modules": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "English Communication",
+    "student_id": 27,
+    "student_name": "Student_27"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "62.3%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Mathematics Fundamentals",
+    "student_id": 28,
+    "student_name": "Student_28"
+  },
+  {
+    "path_type": "STANDARD",
+    "urgency": "On track",
+    "dropout_probability": "14.0%",
+    "recommended_modules": [
+      1,
+      2,
+      3
+    ],
+    "learning_tips": [
+      "Work through hands-on practice problems",
+      "Build mini-projects for each module",
+      "Use interactive simulations"
+    ],
+    "weekly_goal": "Complete 3 modules in 7 days",
+    "course": "Mathematics Fundamentals",
+    "student_id": 28,
+    "student_name": "Student_28"
+  },
+  {
+    "path_type": "REMEDIAL",
+    "urgency": "Extra support needed",
+    "dropout_probability": "47.1%",
+    "recommended_modules": [
+      9,
+      10,
       11,
       12
     ],
@@ -174,7 +1322,7 @@
       "Take structured notes for each topic",
       "Use flashcards for key concepts"
     ],
-    "weekly_goal": "Complete 2 modules in 7 days",
+    "weekly_goal": "Complete 4 modules in 7 days",
     "course": "Data Science with Python",
     "student_id": 29,
     "student_name": "Student_29"
@@ -182,7 +1330,67 @@
   {
     "path_type": "REMEDIAL",
     "urgency": "Extra support needed",
-    "dropout_probability": "46.9%",
+    "dropout_probability": "33.4%",
+    "recommended_modules": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 4 modules in 7 days",
+    "course": "Data Science with Python",
+    "student_id": 29,
+    "student_name": "Student_29"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "57.9%",
+    "recommended_modules": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 4 modules in 7 days",
+    "course": "Data Science with Python",
+    "student_id": 29,
+    "student_name": "Student_29"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "50.7%",
+    "recommended_modules": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 4 modules in 7 days",
+    "course": "Data Science with Python",
+    "student_id": 29,
+    "student_name": "Student_29"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "72.1%",
     "recommended_modules": [
       5,
       6,
@@ -199,5 +1407,194 @@
     "course": "Physics for Engineers",
     "student_id": 31,
     "student_name": "Student_31"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "86.1%",
+    "recommended_modules": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 31,
+    "student_name": "Student_31"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "87.9%",
+    "recommended_modules": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 31,
+    "student_name": "Student_31"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "80.2%",
+    "recommended_modules": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 31,
+    "student_name": "Student_31"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "72.1%",
+    "recommended_modules": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "learning_tips": [
+      "Listen to recorded lectures",
+      "Join study discussion groups",
+      "Use text-to-speech for reading material"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Physics for Engineers",
+    "student_id": 31,
+    "student_name": "Student_31"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "55.3%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 33,
+    "student_name": "Student_33"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "80.5%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 33,
+    "student_name": "Student_33"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "55.9%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 33,
+    "student_name": "Student_33"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "59.5%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 33,
+    "student_name": "Student_33"
+  },
+  {
+    "path_type": "CRITICAL INTERVENTION",
+    "urgency": "Immediate action required",
+    "dropout_probability": "83.8%",
+    "recommended_modules": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "learning_tips": [
+      "Read module summaries before starting",
+      "Take structured notes for each topic",
+      "Use flashcards for key concepts"
+    ],
+    "weekly_goal": "Complete 5 modules in 7 days",
+    "course": "Machine Learning Basics",
+    "student_id": 33,
+    "student_name": "Student_33"
   }
 ]

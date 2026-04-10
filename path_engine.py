@@ -218,7 +218,7 @@ for pt, count in sorted(path_type_counts.items()):
 
 # Save all paths to JSON for the dashboard
 import os
-output_path = r'C:\Users\vaish\OneDrive\Documents\AiProject\learning_paths.json'
+output_path = 'learning_paths.json'
 with open(output_path, 'w') as f:
     json.dump(paths_generated, f, indent=2)
 

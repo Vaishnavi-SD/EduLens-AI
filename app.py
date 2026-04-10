@@ -48,12 +48,11 @@ st.sidebar.image("https://via.placeholder.com/280x80/1a73e8/ffffff?text=EduLens+
 st.sidebar.markdown("---")
 page = st.sidebar.selectbox(
     "Navigate",
-    ["Dashboard", "Student Analysis", "Live Prediction", "Learning Paths"]
+    ["Dashboard", "Student Analysis", "Live Prediction", "Learning Paths", "Upload & Predict"]
 )
 st.sidebar.markdown("---")
 st.sidebar.markdown("**EduLens AI** v1.0")
 st.sidebar.markdown("Built by Vaishnavi Singasani")
-st.sidebar.markdown("Google Pitch Project 2025")
 
 # ================================================
 # PAGE 1: DASHBOARD
@@ -293,3 +292,199 @@ elif page == "Learning Paths":
                     col2.markdown(f"- {tip}")
     except:
         st.warning("Run path_engine.py first to generate learning paths.")
+
+        # ================================================
+# PAGE 5: UPLOAD & PREDICT
+# ================================================
+elif page == "Upload & Predict":
+    st.title("Upload Your Student Dataset")
+    st.markdown("*Upload any student CSV and get instant AI dropout predictions*")
+    st.markdown("---")
+
+    # Show required format
+    st.subheader("Required CSV Format")
+    st.markdown("Your CSV must have these columns:")
+    
+    sample_df = pd.DataFrame({
+        'student_id': [1, 2, 3],
+        'age': [22, 19, 25],
+        'baseline_score': [60.0, 35.0, 75.0],
+        'progress_pct': [65.0, 20.0, 80.0],
+        'avg_duration': [45.0, 15.0, 60.0],
+        'total_sessions': [10, 3, 15],
+        'avg_score': [70.0, 30.0, 85.0],
+        'failed_count': [0, 3, 0],
+        'learning_style': ['visual', 'kinesthetic', 'auditory']
+    })
+    st.dataframe(sample_df, use_container_width=True)
+
+    # Download sample template
+    csv_template = sample_df.to_csv(index=False)
+    st.download_button(
+        label="Download Sample Template CSV",
+        data=csv_template,
+        file_name="edulens_template.csv",
+        mime="text/csv"
+    )
+
+    st.markdown("---")
+
+    # File uploader
+    uploaded_file = st.file_uploader(
+        "Upload your student CSV file",
+        type=['csv']
+    )
+
+    if uploaded_file is not None:
+        try:
+            # Load uploaded data
+            df = pd.read_csv(uploaded_file)
+            st.success(f"File uploaded successfully! {len(df)} students found.")
+            
+            st.subheader("Preview of uploaded data")
+            st.dataframe(df.head(10), use_container_width=True)
+
+            # Check required columns
+            required_cols = ['age', 'baseline_score', 'progress_pct',
+                           'avg_duration', 'total_sessions', 'avg_score',
+                           'failed_count', 'learning_style']
+            
+            missing = [c for c in required_cols if c not in df.columns]
+            
+            if missing:
+                st.error(f"Missing columns: {missing}")
+                st.stop()
+
+            st.markdown("---")
+            st.subheader("Running AI Predictions...")
+
+            # Prepare features
+            risk_map = {'low': 0, 'medium': 1, 'high': 2, 'critical': 3}
+            
+            df['learning_style_encoded'] = df['learning_style'].apply(
+                lambda x: le.transform([x])[0] if x in le.classes_ else 0
+            )
+            
+            df['dropout_probability'] = (
+                (1 - df['avg_score'] / 100) * 0.4 +
+                (1 - df['progress_pct'] / 100) * 0.3 +
+                (df['failed_count'] / 10) * 0.3
+            ).clip(0, 1)
+            
+            df['risk_level_encoded'] = pd.cut(
+                df['dropout_probability'],
+                bins=[0, 0.3, 0.6, 0.8, 1.0],
+                labels=[0, 1, 2, 3]
+            ).astype(float).fillna(0)
+
+            FEATURES = [
+                'age', 'baseline_score', 'progress_pct',
+                'avg_duration', 'total_sessions', 'avg_score',
+                'failed_count', 'dropout_probability',
+                'learning_style_encoded', 'risk_level_encoded'
+            ]
+
+            X = df[FEATURES]
+            df['dropout_prediction'] = model.predict(X)
+            df['dropout_probability_pct'] = (
+                model.predict_proba(X)[:, 1] * 100
+            ).round(1)
+            
+            df['risk_level'] = pd.cut(
+                df['dropout_probability_pct'],
+                bins=[0, 30, 50, 70, 100],
+                labels=['Low', 'Medium', 'High', 'Critical']
+            )
+
+            # Generate learning paths
+            def get_path_type(prob):
+                if prob >= 70:
+                    return 'CRITICAL INTERVENTION'
+                elif prob >= 50:
+                    return 'REMEDIAL'
+                elif prob >= 30:
+                    return 'SUPPORTIVE'
+                else:
+                    return 'STANDARD'
+
+            df['recommended_path'] = df['dropout_probability_pct'].apply(get_path_type)
+
+            style_tips = {
+                'visual': 'Watch video summaries, use mind maps',
+                'auditory': 'Listen to lectures, join study groups',
+                'reading': 'Read summaries, use flashcards',
+                'kinesthetic': 'Hands-on practice, build projects'
+            }
+            df['learning_tips'] = df['learning_style'].map(style_tips).fillna('Review all materials')
+
+            # Show summary metrics
+            st.markdown("---")
+            total = len(df)
+            at_risk = len(df[df['dropout_prediction'] == 1])
+            critical = len(df[df['risk_level'] == 'Critical'])
+            avg_prob = df['dropout_probability_pct'].mean()
+
+            col1, col2, col3, col4 = st.columns(4)
+            col1.metric("Total Students", total)
+            col2.metric("At Risk", at_risk)
+            col3.metric("Critical Cases", critical)
+            col4.metric("Avg Dropout Risk", f"{avg_prob:.1f}%")
+
+            st.markdown("---")
+
+            # Show results table
+            st.subheader("Prediction Results")
+            result_cols = ['age', 'progress_pct', 'avg_score',
+                          'dropout_probability_pct', 'risk_level',
+                          'recommended_path', 'learning_tips']
+            
+            available_cols = [c for c in result_cols if c in df.columns]
+            st.dataframe(df[available_cols], use_container_width=True)
+
+            # Charts
+            st.markdown("---")
+            col1, col2 = st.columns(2)
+
+            with col1:
+                st.subheader("Risk Distribution")
+                risk_counts = df['risk_level'].value_counts().reset_index()
+                risk_counts.columns = ['Risk Level', 'Count']
+                color_map = {
+                    'Low': '#1D9E75', 'Medium': '#BA7517',
+                    'High': '#E24B4A', 'Critical': '#7F77DD'
+                }
+                fig = px.bar(risk_counts, x='Risk Level', y='Count',
+                           color='Risk Level',
+                           color_discrete_map=color_map)
+                fig.update_layout(height=300, showlegend=False)
+                st.plotly_chart(fig, use_container_width=True)
+
+            with col2:
+                st.subheader("Dropout Probability Distribution")
+                fig = px.histogram(
+                    df, x='dropout_probability_pct',
+                    nbins=20,
+                    color_discrete_sequence=['#378ADD']
+                )
+                fig.add_vline(x=50, line_dash="dash",
+                            line_color="red",
+                            annotation_text="Risk threshold")
+                fig.update_layout(height=300)
+                st.plotly_chart(fig, use_container_width=True)
+
+            # Download results
+            st.markdown("---")
+            st.subheader("Download Results")
+            result_csv = df[available_cols].to_csv(index=False)
+            st.download_button(
+                label="Download Predictions as CSV",
+                data=result_csv,
+                file_name="edulens_predictions.csv",
+                mime="text/csv"
+            )
+
+            st.success("Analysis complete! Scroll up to see all results.")
+
+        except Exception as e:
+            st.error(f"Error processing file: {str(e)}")
+            st.info("Please make sure your CSV matches the required format shown above.")

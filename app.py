@@ -8,6 +8,26 @@ import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
 
+
+# ================================================
+# THEME TOGGLE
+# ================================================
+if "theme" not in st.session_state:
+    st.session_state.theme = "dark"
+
+def toggle_theme():
+    st.session_state.theme = "light" if st.session_state.theme == "dark" else "dark"
+
+# Add theme button in sidebar
+with st.sidebar:
+    st.markdown("**EduLens AI** v1.0")
+    col1, col2 = st.columns([3, 1])
+    with col2:
+        theme_icon = "🌙" if st.session_state.theme == "dark" else "☀️"
+        st.button(theme_icon, on_click=toggle_theme, key="theme_toggle")
+    with col1:
+        st.markdown(f"**Theme:** {st.session_state.theme.title()}")
+
 st.set_page_config(
     page_title="EduLens AI",
     page_icon="🎓",

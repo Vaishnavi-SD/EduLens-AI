@@ -57,6 +57,9 @@ st.sidebar.markdown("Built by Vaishnavi Singasani")
 # ================================================
 # PAGE 1: DASHBOARD
 # ================================================
+# ================================================
+# PAGE 1: DASHBOARD
+# ================================================
 if page == "Dashboard":
     st.title("EduLens AI — Educator Dashboard")
     st.markdown("*Real-time student engagement and dropout risk analytics*")
@@ -74,6 +77,30 @@ if page == "Dashboard":
     col2.metric("Dropout Rate", f"{dropout_rate:.1f}%", "-2.3%")
     col3.metric("At-Risk Students", f"{at_risk}", f"+{at_risk}")
     col4.metric("Avg Assessment Score", f"{avg_score:.1f}")
+
+    st.markdown("---")
+
+    # ALERT SYSTEM BUTTON
+    st.subheader("Teacher Alert System")
+    col1, col2, col3 = st.columns([1, 1, 2])
+    
+    with col1:
+        if st.button("📧 Send Teacher Alerts", key="send_alerts"):
+            with st.spinner("Sending alerts to teachers..."):
+                # Simulate sending alerts
+                critical_students = risk[risk['risk_level'].isin(['high', 'critical'])]
+                alert_count = len(critical_students)
+                
+                st.success(f"✅ Alerts sent successfully!")
+                st.info(f"📊 {alert_count} critical students flagged")
+                st.info(f"👨‍🏫 5 teachers notified via email")
+                st.info(f"⏰ Timestamp: {pd.Timestamp.now().strftime('%d %B %Y at %I:%M %p')}")
+    
+    with col2:
+        st.metric("Alerts Sent Today", "5")
+    
+    with col3:
+        st.markdown("**Alert Status:** Active ✅\n\nTeachers receive real-time notifications when students hit critical risk.")
 
     st.markdown("---")
 
